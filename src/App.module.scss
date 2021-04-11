@@ -1,0 +1,58 @@
+.App {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav {
+  color: black;
+  margin-bottom: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+
+  .FixedNavbarItems {
+    display: flex;
+    justify-content: stretch;
+    flex-direction: row-reverse;
+
+    .Heading {
+      display: inline-block;
+      width: 60%;
+      font-size: 40px;
+      margin: 20px 0 20px 20px;
+      font-weight: 600;
+
+      .Span {
+        font-weight: 200;
+      }
+    }
+  }
+
+  .Row {
+    display: flex;
+    height: 24px;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    justify-content: space-around;
+
+    .Day {
+      // flex: 1;
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      padding: 0 0 12px 0;
+      margin-right: 15px;
+
+      .Light {
+        color: rgb(180, 178, 178);
+      }
+    }
+  }
+}
+
+.Calendar {
+  // position: fixed;
+  width: 100%;
+}

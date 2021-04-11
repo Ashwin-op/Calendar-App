@@ -1,0 +1,71 @@
+.PopUp {
+  position: fixed;
+  background-color: white;
+  width: 364px;
+  height: 512px;
+  left: 40%;
+  top: 30%;
+  box-sizing: border-box;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 3px;
+  z-index: 150;
+}
+
+.Img {
+  height: 60%;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.legendsRatings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  height: 40px;
+  width: 40px;
+  padding: 3px;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+
+  &:nth-child(1) {
+    background-color: pink;
+  }
+
+  &:nth-child(2) {
+    background-color: rgb(251, 238, 52);
+  }
+
+  &:nth-child(3) {
+    background-color: rgb(198, 251, 52);
+  }
+
+  &:nth-child(4) {
+    background-color: rgb(52, 188, 251);
+  }
+}
+
+.ratings {
+  margin-right: 10px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.content {
+  padding: 16px;
+  color: rgb(100, 100, 100);
+
+  h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}

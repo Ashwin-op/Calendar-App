@@ -1,0 +1,69 @@
+$color: #e6e5e6;
+
+.Months {
+  color: $color;
+
+  .Week {
+    display: flex;
+    scroll-snap-align: start;
+
+    .Tile {
+      flex: 1;
+      display: flex;
+      flex-direction: row-reverse;
+      height: 200px;
+      border-right: 1px solid $color;
+      border-bottom: 1px solid $color;
+      padding: 8px 8px 0 0;
+      box-sizing: border-box;
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      .PostImg {
+        margin-top: 30px;
+        margin-left: 35px;
+        height: 75%;
+        width: 85%;
+        border-radius: 5px;
+      }
+
+      .Text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        padding: 2px;
+      }
+
+      .Text.Active {
+        background-color: red;
+        color: white;
+        font-weight: 600;
+        border-radius: 50%;
+      }
+    }
+
+    .Sunday {
+      background: #f8f7f8;
+      color: #8d8d8d;
+    }
+
+    .ActiveMonth {
+      color: black;
+    }
+
+    .Sunday.ActiveMonth {
+      color: rgb(95, 95, 95);
+    }
+  }
+
+  .Month {
+    height: 32px;
+    width: 32px;
+    margin-top: 4px;
+    margin-right: 0;
+  }
+}

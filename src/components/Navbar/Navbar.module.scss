@@ -1,0 +1,27 @@
+.ButtonControls {
+  display: inline-block;
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+}
+
+button {
+  height: 20px;
+  background: white;
+  border-radius: 4px;
+  color: rgb(85, 83, 83);
+  font-weight: 500;
+  border: 1px solid rgb(148, 148, 148);
+}
+
+.ButtonToday {
+  width: 80px;
+}
+
+.ButtonPrev,
+.ButtonNext {
+  height: 20px;
+  width: 20px;
+}
