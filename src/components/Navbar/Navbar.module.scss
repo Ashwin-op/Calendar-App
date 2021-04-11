@@ -8,20 +8,48 @@
 }
 
 button {
-  height: 20px;
   background: white;
-  border-radius: 4px;
   color: rgb(85, 83, 83);
   font-weight: 500;
-  border: 1px solid rgb(148, 148, 148);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .ButtonToday {
   width: 80px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 4px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: lightgray;
+  }
 }
 
 .ButtonPrev,
 .ButtonNext {
-  height: 20px;
-  width: 20px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 1px solid rgb(85, 83, 83);
+  border-right: 1px solid rgb(85, 83, 83);
+
+  &:hover {
+    border-top: 2px solid rgb(85, 83, 83);
+    border-right: 2px solid rgb(85, 83, 83);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.ButtonPrev {
+  transform: rotate(-135deg);
+}
+
+.ButtonNext {
+  transform: rotate(45deg);
 }

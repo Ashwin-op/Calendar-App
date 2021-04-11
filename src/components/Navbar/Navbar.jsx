@@ -40,15 +40,17 @@ const NavigationButtonControls = (props) => {
 
   return (
     <div className={classes.ButtonControls}>
-      <button className={classes.ButtonPrev} onClick={executeScrollPrev}>
-        &lt;
-      </button>
+      <button
+        className={classes.ButtonPrev}
+        onClick={executeScrollPrev}
+      ></button>
       <button className={classes.ButtonToday} onClick={executeScrollToday}>
         Today
       </button>
-      <button className={classes.ButtonNext} onClick={executeScrollNext}>
-        &gt;
-      </button>
+      <button
+        className={classes.ButtonNext}
+        onClick={executeScrollNext}
+      ></button>
     </div>
   );
 };
